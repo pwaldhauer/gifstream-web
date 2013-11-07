@@ -1,0 +1,153 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.top {
+    background: #2384ac;
+    color: #fff;
+    padding: 50px;
+    padding-top: 200px;
+}
+
+
+
+header h1 {
+    font-size: 105px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+header h2 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.middle {
+    background: #ace7e9;
+    padding: 20px 50px 17px 50px;
+}
+
+.bottom {
+    padding: 0px 50px;
+}
+
+.iphone-border {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+.gif {
+    position: absolute;
+    margin-left: 27px;
+    margin-top: -608px;
+}
+
+.links-big {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.links-big a {
+    color: #2384ac;
+    text-decoration: none;
+}
+
+.links-big li {
+    margin: 40px 0;
+}
+
+.links-small a {
+    color: #000;
+    text-decoration: none;
+}
+
+.links-small li {
+    margin: 20px 0;
+}
+
+
+@media (max-width: 880px) {
+    .iphone-border {
+        position: static;
+        margin: 50px 50px;
+    }
+
+    .gif {
+        position: relative;
+        margin-left: -313px;
+        top: -101px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .top {
+        padding-top: 100px;
+    }
+
+    header h1 {
+        font-size: 80px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    header h2 {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .links-big {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .top {
+        padding: 20px;
+    }
+
+    .middle {
+        background: #ace7e9;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .bottom {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .iphone-border {
+      margin: 20px;
+    }
+
+    .iphone-border img {
+      width: 280px;
+    }
+
+    .gif {
+      width: 239px !important;
+      position: relative;
+      margin-left: 22px;
+      top: -101px !important;
+    }
+
+    header h1 {
+        font-size: 60px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    header h2 {
+        font-size: 22px;
+        font-weight: 300;
+    }
+}
