@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GifStream</title>
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="javascripts/generator.js"></script>
+</head>
+
+<body class="generator">
+
+<div class="top">
+
+    <header>
+        <h1>GifStream  Generator</h1>
+    </header>
+
+</div>
+
+<div class="middle">
+	<form>
+		<input type="text" name="title" id="title" placeholder="Title (required)" required />
+		<p class="errormessage">Please enter a title.</p>
+		<input type="text" name="identifier" id="identifier" placeholder="Identifier (required, e.g. 'de.philippwaldhauer.kittens')">
+		<p class="errormessage">Please enter an identifier.</p>
+		<input type="text" name="license" id="license" placeholder="License" />
+
+		<textarea cols="50" rows="10" name="files" id="files" placeholder="Direct Links to GIF Files (required, one per line)" required></textarea>
+		<p class="errormessage">There's not a single link in here!</p>
+		<p class="errormessage errormessage-links">Please enter a couple of links.</p>
+
+		<input class="submit-button" type="button" id="submit" value="Generate GifStream">
+	</form></div>
+
+<div class="bottom">
+
+	<a name="result"></a>
+	<div class="js-result">
+		<h2>Your Stream</h2>
+		<textarea cols="50" rows="10" id="result" name="result" onclick="this.focus();this.select()" readonly="readonly"></textarea>
+		<p class="explanation" id="explain">Save this to a <code>.gifstream.json</code> file and upload it to a file server. Then open its URL in GifStream!</p>
+	</div>
+
+</div>
+
+
+</body>
+
+</html>
