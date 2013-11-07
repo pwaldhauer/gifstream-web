@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+body {
+	width: 400px;
+	margin: 20px auto;
+	font-size: 16px;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1, h2 {
+	margin-bottom: 0.5em;
+	font-weight: lighter;
+}
+
+input[type="text"] {
+	width: 100%;
+	margin-bottom: 0.5em;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+textarea {
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	margin-bottom: 0.5em;
+	border: 1px solid #ccc;
+}
+
+/* Errors */
+.errormessage {
+	display: none;
+	margin-bottom: 0.5em;
+	font-size: 14px;
+	color: red;
+}
+
+.error {
+	border: 1px solid red !important;
+}
+
+/* Success */
+h2 {
+	display: none;
+	margin-top: 2em;
+}
+
+#result {
+	display: none;
+	margin-bottom: 1em;
+}
+
+#explain {
+	display: none;
+	font-size: 14px;
+	line-height: 1.5em;
+}
