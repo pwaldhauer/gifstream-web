@@ -111,8 +111,8 @@ header h2 {
 
 .iphone-border {
     position: absolute;
-    right: 100px;
-    top: 10px;
+    left: 800px;
+    top: 50px;
 }
 
 .gif {
@@ -161,9 +161,13 @@ header h2 {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
     .top {
         padding-top: 100px;
+    }
+
+    .iphone-border {
+        left: 500px;
     }
 
     header h1 {
