@@ -113,12 +113,16 @@ header h2 {
     position: absolute;
     left: 800px;
     top: 50px;
+
+
+    background: url('../img/iphone-border.png');
+    width: 449px;
+    height: 780px;
 }
 
 .gif {
-    position: absolute;
-    margin-left: 27px;
-    margin-top: -608px;
+    margin-top: 105px;
+    margin-left: 78px;
 }
 
 .links-big {
@@ -154,11 +158,6 @@ header h2 {
         margin: 50px 50px;
     }
 
-    .gif {
-        position: relative;
-        margin-left: -313px;
-        top: -101px;
-    }
 }
 
 @media (max-width: 1150px) {
@@ -206,15 +205,16 @@ header h2 {
       margin: 50px 20px;
     }
 
-    .iphone-border img {
-      width: 280px;
+    .iphone-border {
+        background-size: 380px;
+        background-repeat: no-repeat;
     }
 
     .gif {
       width: 239px !important;
       position: relative;
-      margin-left: 22px;
-      top: -101px !important;
+      margin-top: 89px;
+      margin-left: 66px;
     }
 
     header h1 {
